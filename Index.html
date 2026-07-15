@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BurkiMarket</title>
 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ BurkiMarket</h1>
+  <p>Achetez et vendez partout au Burkina Faso</p>
+</header>
+
+<main class="container">
+
+  <section class="search-box">
+    <input type="text" id="search" placeholder="Rechercher un produit...">
+  </section>
+
+  <section class="seller-box">
+    <h2>Publier un produit</h2>
+
+    <input type="text" id="nom" placeholder="Nom du produit">
+
+    <input type="number" id="prix" placeholder="Prix">
+
+    <select id="categorie">
+      <option>Téléphones</option>
+      <option>Mode</option>
+      <option>Électronique</option>
+      <option>Maison</option>
+      <option>Autres</option>
+    </select>
+
+    <textarea id="description" placeholder="Description"></textarea>
+
+    <input type="text" id="whatsapp" placeholder="Numéro WhatsApp">
+
+    <button id="publier">
+      Publier le produit
+    </button>
+
+  </section>
+
+  <section>
+
+    <h2>Produits disponibles</h2>
+
+    <div id="listeProduits"></div>
+
+  </section>
+
+</main>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
